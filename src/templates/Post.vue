@@ -57,6 +57,7 @@ export default {
 <page-query>
 query Post ($path: String!) {
   post: post (path: $path) {
+    author
     title
     path
     date (format: "DD/MM/YYYY")

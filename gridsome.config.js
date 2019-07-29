@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'הבלוג של גו-קוד',
-  siteDescription: 'מאמרים וקוד בפיתוח ווב',
+  siteDescription: 'בלוג עם קוד, קוד ועוד קצת קוד',
 
   plugins: [
     {
@@ -39,4 +39,5 @@ module.exports = {
       ]
     }
   },
+  host: '0.0.0.0'
 }

@@ -24,6 +24,7 @@
           title
           path
         }
+        author
         date (format: "D/MM/YYYY")
         timeToRead
         description
