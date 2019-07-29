@@ -21,11 +21,11 @@
       <a href="tel:+972525710099" target="_blank">
         <font-awesome :icon="['fas', 'phone']" />
 
-        יעוץ מקצועי טלפוני</a
+        יעוץ מקצועי</a
       >
       <a href="//t.me/gocodesderot" target="_blank">
         <font-awesome :icon="['fab', 'telegram']" />
-        ערוץ טלגרם</a
+    	טלגרם</a
       >
       <a href="//youtube.com/c/gocodesderot" target="_blank">
         <font-awesome :icon="['fab', 'youtube']" />

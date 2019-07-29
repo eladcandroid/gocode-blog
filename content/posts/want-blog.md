@@ -34,7 +34,7 @@ description: "לא תאמינו כמה זה פשוט ליצור היום בלו�
 כמובן שאני יוצא מנקודת הנחה שמותקן לכם [Node.js](https://nodejs.org/en/) בגרסא עדכנית. אם לא - תעמדו בפינה או שפשוט תתקינו מהר לפני שאראה! 👻
 
 
-כדי ליצור פרויקט חדש, כתבו בטרמינל/CMD/iTerm/Terminus/שם-מוזר-אחר את הפקודה הבאה:
+כדי ליצור פרויקט חדש, כתבו בטרמינל/CMD/iTerm/Terminus או שם-מוזר-אחר את הפקודה הבאה:
 ```bash
 npx gridsome create my-gridsome-site
 ```
@@ -155,7 +155,9 @@ export default {
 התוצאה מהשאילתה תכנס למשתנה מיוחד בשם ```page$``` בו נוכל להשתמש בטמפלייט או בסקריפט.
 
 עוד הסבר על שימוש ב GraphQL ניתן למצוא כאן:
-https://gridsome.org/docs/querying-data/#how-to-query-with-graphql
+
+[GridSome Querying Data](https://gridsome.org/docs/querying-data/#how-to-query-with-graphql)
+
 
 כדי לראות את כל שאילתות ה GraphQL המוגדרות בפרויקט ואף להריץ אותן הפעילו
 ```bash
@@ -245,7 +247,8 @@ dist
 ## כבר נגמר?
 
 כן. ספרו לי בקבוצת הפייסבוק איך היה
-https://www.facebook.com/groups/614192685738261/
+[GoCode Facebook](https://www.facebook.com/groups/614192685738261/)
+
 
 ## רגע, אבל מה עם Gatsby?
 
