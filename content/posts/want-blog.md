@@ -186,4 +186,27 @@ npx live-server ./dist
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/wB2c2EI3fPQ/0.jpg)](https://www.youtube.com/watch?v=wB2c2EI3fPQ)
 
+טוב, בחזרה ל Netlify - הרשמו לאתר וכנסו ל Dashboard שלכם.
+לחצו על "New site from GIT", התחברו לגיטהאב/ביטבאקט/גיטלאב ולחצו על הרפוזיטורי המתאים
+
+נשאר לכם להגדיר שתי הגדרות קטנות:
+
+תחת Build Command הכניסו:
+
+```bash
+gridsome build
+```
+
+וב Publish Directory:
+
+```bash
+dist
+```
+
+את ההיגיון בטח כבר הבנתם. הנה תמונת מסך
+
+![GridSome Netlify](./images/gridsome-netlify.png)
+
+מה? זהו?!
+לגמרי! מבטיח עם ב׳!! 🤗
 
