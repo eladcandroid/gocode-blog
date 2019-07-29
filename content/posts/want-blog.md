@@ -210,3 +210,19 @@ dist
 מה? זהו?!
 לגמרי! מבטיח עם ב׳!! 🤗
 
+ומה יקרה אם ארצה לשנות משהו?
+שמירה, commit, push ו Netlify יזהה ויפעיל מחדש build!
+תוכלו לצפות בקסם הזה תחת Production deploys תחת האתר שלכם ב Netlify.
+
+## כבר נגמר?
+
+כן. ספרו לי בקבוצת הפייסבוק איך היה
+https://www.facebook.com/groups/614192685738261/
+
+## רגע, אבל מה עם Gatsby?
+
+[Gatsby.js](https://www.gatsbyjs.org) הוא ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js.. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו
+[Gatsby.js](https://www.gatsbyjs.org) הוא ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו.
+
+
+בילוג נפלא לכולם!
