@@ -1,6 +1,6 @@
 ---
 slug: want-blog
-title: אני רוצה גם כזה!
+title: אני רוצה גם כזה בלוג!
 date: 2019-07-29
 published: true
 tags: ['Blog', 'Gatsby', 'Gridsome']
@@ -33,22 +33,27 @@ description: "לא תאמינו כמה זה פשוט ליצור היום בלו�
 כמובן שאני יוצא מנקודת הנחה שמותקן לכם [Node.js](https://nodejs.org/en/) בגרסא עדכנית. אם לא - תעמדו בפינה או שפשוט תתקינו מהר לפני שאראה! 👻
 
 
-כדי ליצור פרויקט חדש, כתבו בטרמינל את הפקודה הבאה:
+כדי ליצור פרויקט חדש, כתבו בטרמינל/CMD/iTerm/Terminus/שם-מוזר-אחר את הפקודה הבאה:
 ```bash
 npx gridsome create my-gridsome-site
 ```
 
-אחר כך נכנס לספרייה ונריץ שרת פיתוח
+מאיפה הגיע npx??!!
+בסדר רילקס! מסביר!
+npx היא פקודה שמריצה חבילות באופן גלובלי, בלי צורך להתקין אותן כמו פעם (npm i -g package)
+
+אחר כך נכנס לספרייה שנולדה זה עתה ונריץ שרת פיתוח
 ```bash
 cd my-gridsome-site
-gridsome develop
+npm run develop
 ```
 
 השרת ירוץ כברירת מחדל ב localhost:8080 בהנחה שהפורט אצלכם לא תפוס
 
 ## יצירת דפים
 
-כל קובץ vue שתצרו תחת ספריית pages יתווסף אוטומטית כנתיב (Route) לבלוג. הרעיון כאן הוא לפשט כמה שיותר את עניין הניתובים. כמובן שאם תרצו לעשות משהו טיפה יותר מורכב תצטרכו לחפור מעט בתיעוד כאן.
+כל קובץ vue שתצרו תחת ספריית pages יתווסף אוטומטית כנתיב (Route) לבלוג. הרעיון כאן הוא לפשט כמה שיותר את עניין הניתובים. כמובן שאם תרצו לעשות משהו טיפה יותר מורכב תצטרכו לחפור מעט בתיעוד כאן:
+https://gridsome.org/docs/pages
 
 ## ארכיטקטורה
 
@@ -86,7 +91,7 @@ query Post ($path: String!) {
 ```
 
 שימו לב שזהו בלוק מיוחד בתוך קובץ vue שמגדיר את שאילתת ה GraphQL כדי להשתמש במידע המועבר באמצעות שאילתת GraphQL,
-דף index.vue כולו, יראה כך:
+דף ה index.vue כולו, יראה כך:
 
 ```javascript
 <template>
@@ -162,6 +167,26 @@ npm run explore
 
 למי שלא מכיר GraphQL - מדובר בגדול בשפת שאילתות מבית פייסבוק שכתובה בצורה דומה לאובייקט JSON ומאפשרת לנו להגדיר שליפה מרובת שדות ומקוננת ובקריאת POST אחת ניתן לתאר מה בדיוק אנחנו רוצים מהשרת. אבל זה בהחלט משפט כללי מדי אז כדאי שפשוט תתחילו להעמיק בעניין...
 
+## Markdown ושאר ירקות
+
+כדי להתחיל לחבר Plugins כמו תמיכה בקריאת קבצי Markdown, מגדירים את קובץ  gridsome.config.js כמו שמופיע כאן
+https://gridsome.org/docs/plugins
+
+או פשוט ליצור פרויקט עם starter מוכן בהוספת שם ה starter לפקודה ה create. לדוגמא:
+
+```bash
+npx gridsome create my-website https://github.com/gridsome/gridsome-starter-markdown-blog.git
+```
+
+או
+
+```bash
+npx gridsome create my-website https://github.com/gridsome/gridsome-starter-blog.git
+```
+
+
+עוד כמה Starters להנאתכם:
+https://gridsome.org/starters
 
 ## בנייה לפרודקשיין והעלאה ל Netlify
 
@@ -179,17 +204,19 @@ gridsome build
 npx live-server ./dist
 ```
 
+עכשיו שלב ה - Deploy: אחד הכלים הנוחים שיש כיום להגשת אתרים סטטיים ועם תוכנית חינמית נפלאה הוא [Netlify](https://www.netlify.com). ותראו עד כמה הוא פשוט:
+
 לפני שנעלה ל Netlify, נוסיף תמיכה ב Git בפרויקט ונדחוף את הקבצים ל GitHub.
 אם אתם עדיין לא מבינים מה זה GIT אז פויה! 
 
 או במילים אחרות:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/wB2c2EI3fPQ/0.jpg)](https://www.youtube.com/watch?v=wB2c2EI3fPQ)
+[![GoCode - Git For Beginners](https://img.youtube.com/vi/wB2c2EI3fPQ/0.jpg)](https://www.youtube.com/watch?v=wB2c2EI3fPQ)
 
 טוב, בחזרה ל Netlify - הרשמו לאתר וכנסו ל Dashboard שלכם.
-לחצו על "New site from GIT", התחברו לגיטהאב/ביטבאקט/גיטלאב ולחצו על הרפוזיטורי המתאים
+לחצו על "New site from GIT", התחברו לגיטהאב/ביטבאקט/גיטלאב ובחרו את הרפוזיטורי המתאים.
 
-נשאר לכם להגדיר שתי הגדרות קטנות:
+נשאר להגדיר שתי הגדרות קטנות:
 
 תחת Build Command הכניסו:
 
@@ -210,7 +237,7 @@ dist
 מה? זהו?!
 לגמרי! מבטיח עם ב׳!! 🤗
 
-ומה יקרה אם ארצה לשנות משהו?
+ומה יקרה אם נרצה לשנות משהו?
 שמירה, commit, push ו Netlify יזהה ויפעיל מחדש build!
 תוכלו לצפות בקסם הזה תחת Production deploys תחת האתר שלכם ב Netlify.
 
@@ -221,8 +248,7 @@ https://www.facebook.com/groups/614192685738261/
 
 ## רגע, אבל מה עם Gatsby?
 
-[Gatsby.js](https://www.gatsbyjs.org) הוא ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js.. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו
-[Gatsby.js](https://www.gatsbyjs.org) הוא ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו.
+[Gatsby.js](https://www.gatsbyjs.org) ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו.
 
 
 בילוג נפלא לכולם!

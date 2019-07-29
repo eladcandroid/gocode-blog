@@ -16,8 +16,8 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">כל הזכויות שמורות © {{ new Date().getFullYear() }}. </span>
-      <span class="footer__links">נאפה בעזרת <a href="//gridsome.org"> Gridsome </a></span>
+      <span class="footer__copyright">כל הזכויות שמורות לבורא עולם (ולגו-קוד) © {{ new Date().getFullYear() }}. </span>
+      <span class="footer__links">נאפה בתנור חלבי בעזרת <a href="//gridsome.org"> Gridsome </a></span>
     </footer>
 
   </div>
