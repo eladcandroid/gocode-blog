@@ -31,6 +31,21 @@ module.exports = {
       options: {
         id: 'UA-47062887-8'
       }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'GoCode Blog',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        serviceWorkerPath: 'service-worker.js',
+        shortName: 'GoCode Blog',
+        themeColor: '#666600',
+        backgroundColor: '#ffffff',
+        icon: './src/assets/images/logo.png'
+      }
     }
   ],
 
@@ -42,6 +57,6 @@ module.exports = {
       anchorClassName: 'icon icon-link',
       plugins: ['@gridsome/remark-prismjs']
     }
-  }
-  
+  },
+  host: '0.0.0.0'
 };
