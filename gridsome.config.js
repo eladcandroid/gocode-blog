@@ -36,7 +36,7 @@ module.exports = {
       use: '~/gridsome-plugin-pwa',
       options: {
         title: 'GoCode Blog',
-        startUrl: '.',
+        startUrl: '/index.html',
         display: 'standalone',
         statusBarStyle: 'default',
         // manifestPath: 'manifest.json',
