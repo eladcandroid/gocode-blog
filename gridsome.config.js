@@ -33,18 +33,18 @@ module.exports = {
       }
     },
     {
-      use: 'gridsome-plugin-pwa',
+      use: '~/gridsome-plugin-pwa',
       options: {
         title: 'GoCode Blog',
         startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: 'manifest.json',
-        serviceWorkerPath: 'service-worker.js',
+        // manifestPath: 'manifest.json',
+        // serviceWorkerPath: 'service-worker.js',
         shortName: 'GoCode Blog',
         themeColor: '#666600',
         backgroundColor: '#ffffff',
-        icon: './src/assets/images/logo.png'
+        icon: './src/favicon.png'
       }
     }
   ],

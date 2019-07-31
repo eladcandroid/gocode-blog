@@ -1,4 +1,3 @@
-
 addEventListener('message', event => {
   const replyPort = event.ports[0]
   const message = event.data
