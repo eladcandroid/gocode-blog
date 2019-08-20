@@ -254,5 +254,7 @@ dist
 
 [Gatsby.js](https://www.gatsbyjs.org) ממש ממש דומה ל GridSome... איך זה יכול להיות? מכיוון ש GridSome הוא העתק נפלא של Gatsby רק עבור Vue.js. אבל אם תעדיפו ריאקט פשוט נסו לשחק גם איתו.
 
+## אפשר להסתכל על הקוד?
+תתפנקו לכם בנעימים: [GitHub Repository](https://github.com/eladcandroid/gocode-blog)
 
-בילוג נפלא לכולם!
+ובילוג נפלא לכולם!
