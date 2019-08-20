@@ -46,6 +46,27 @@ module.exports = {
         backgroundColor: '#ffffff',
         icon: './src/favicon.png'
       }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: 'הבלוג של גו-קוד',
+          feed_url: 'https://blog.gocode.co.il/rss.xml',
+          site_url: 'https://blog.gocode.co.il'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: 'https://blog.gocode.co.il/' + node.slug,
+          author: node.author
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
     }
   ],
 

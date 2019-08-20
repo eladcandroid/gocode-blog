@@ -4,14 +4,17 @@
       <h1 class="post-title__text">
         {{ $page.post.title }}
       </h1>
-      
-      <PostMeta :post="$page.post" />
 
+      <PostMeta :post="$page.post" />
     </div>
-    
+
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.image" :src="$page.post.image" />
+        <g-image
+          alt="Cover image"
+          v-if="$page.post.image"
+          :src="$page.post.image"
+        />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -22,7 +25,10 @@
     </div>
 
     <div class="post-comments">
-      <!-- Add comment widgets here -->
+      <vue-disqus
+        shortname="gocode-blog"
+        :identifier="$page.post.title"
+      ></vue-disqus>
     </div>
 
     <Author class="post-author" />
@@ -30,9 +36,9 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from '~/components/PostMeta';
+import PostTags from '~/components/PostTags';
+import Author from '~/components/Author.vue';
 
 export default {
   components: {
@@ -40,7 +46,7 @@ export default {
     PostMeta,
     PostTags
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
@@ -49,9 +55,9 @@ export default {
           content: this.$page.post.description
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <page-query>
@@ -81,7 +87,6 @@ query Post ($path: String!) {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-right: calc(var(--space) * -1);
@@ -89,7 +94,7 @@ query Post ($path: String!) {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-    
+
     img {
       width: 100%;
     }
@@ -110,17 +115,18 @@ query Post ($path: String!) {
     }
 
     img {
-      width: calc(100%);
+      max-width: calc(100%);
       margin-left: calc(var(--space) * -1);
       display: block;
-      max-width: none;
     }
   }
 }
 
 .post-comments {
+  max-width: var(--content-width);
   padding: calc(var(--space) / 2);
-  
+  margin: 0 auto;
+
   &:empty {
     display: none;
   }
