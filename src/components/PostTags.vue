@@ -16,9 +16,12 @@ export default {
 .post-tags {
   direction: ltr;
   margin: 1em 0 0;
+  display: flex;
+  flex-wrap: wrap;
 
   &__link {
   	margin-right: .7em;
+	margin-bottom: 1em;
   	font-size: .8em;
   	color: currentColor;
   	text-decoration: none;
