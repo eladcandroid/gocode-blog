@@ -39,6 +39,8 @@ const createServiceWorker = async (context, config, queue, options) => {
 
   console.log('serviceWorkerPath', serviceWorkerPath);
   await (0, _workboxBuild.generateSW)({
+    skipWaiting: true,
+    clientsClaim: true,
     swDest: serviceWorkerPath,
     globDirectory: config.outDir,
     globPatterns: ['**/*.{js,json,css,html,png,jpg,jpeg,svg}'],
@@ -52,7 +54,7 @@ const createServiceWorker = async (context, config, queue, options) => {
       return urls;
     }, {})
   });
-  await appendToServiceWorker(options);
+  // await appendToServiceWorker(options);
 };
 
 exports.createServiceWorker = createServiceWorker;
