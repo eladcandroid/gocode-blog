@@ -23,7 +23,11 @@ export default {
     }
   },
   mounted() {
-    if (window.__theme == 'dark') this.darkTheme = true
+    if (window.__theme === 'dark') {
+      this.darkTheme = true
+    } else {
+      this.darkTheme = false;
+    }
   }
 }
 </script>
