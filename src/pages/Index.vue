@@ -5,9 +5,12 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
-
   </Layout>
 </template>
 
@@ -41,16 +44,31 @@
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
-import PostCard from '~/components/PostCard.vue'
+import Author from '~/components/Author.vue';
+import PostCard from '~/components/PostCard.vue';
+
+const META_TITLE = 'GoCode Blog - גו-קוד בלוג - קוד, קוד ועוד קצת קוד';
+const META_DESCRIPTION =
+  'בלוג טכנולוגי לחלוטין בפיתוח ווב. Angular/React/Vue.js/Svelte. כולם חיים כאן בשלום, כולל פיתוח למובייל בעזרת Flutter, Ionic, Cordova, Quasar, NativeScript, ReactNative ועוד ועוד...';
 
 export default {
   components: {
     Author,
     PostCard
   },
-  metaInfo: {
-    title: 'GoCode Blog - גו-קוד בלוג - קוד, קוד ועוד קצת קוד'
+  metaInfo() {
+    return {
+      title: META_TITLE,
+      meta: [
+        {
+          name: 'description',
+          content: META_DESCRIPTION
+        },
+        { property: 'og:title', content: META_TITLE },
+        { property: 'og:description', content: META_DESCRIPTION },
+        { property: "og:image", content: require("~/assets/images/logo.png") },        
+      ]
+    };
   }
-}
+};
 </script>

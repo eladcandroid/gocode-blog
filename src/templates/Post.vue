@@ -46,9 +46,6 @@ export default {
     PostMeta,
     PostTags
   },
-  mounted() {
-    console.log('this.$page.post.image', this.$page.post.image);
-  },
   metaInfo() {
     return {
       title: this.$page.post.title,
