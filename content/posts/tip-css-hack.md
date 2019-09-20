@@ -4,7 +4,7 @@ author: אלעד כהן
 title: טיפ להמונים - CSS Hack
 date: 2019-09-12
 published: true
-tags: ['Tips', 'Tip', 'CSS', 'Chrome Bookmark', 'CSS Hack', '']
+tags: ['Tips', 'Tip', 'CSS', 'Chrome Bookmark', 'CSS Hack']
 image: ./images/tip-css-hack.png
 canonical_url: false
 description: "פינה חדשה - טיפ להמונים - והפעם: שיטה להצגת אלמנטים בדף בעזרת CSS פשוט"
