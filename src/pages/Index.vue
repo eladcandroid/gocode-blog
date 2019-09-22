@@ -15,7 +15,7 @@
 </template>
 
 <page-query>
-{
+query {
   posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
@@ -66,7 +66,7 @@ export default {
         },
         { property: 'og:title', content: META_TITLE },
         { property: 'og:description', content: META_DESCRIPTION },
-        { property: "og:image", content: require("~/assets/images/logo.png") },        
+        { property: 'og:image', content: require('~/assets/images/logo.png') }
       ]
     };
   }

@@ -1,0 +1,26 @@
+.post-comments {
+  direction: initial;
+  background-color: var(--bg-content-color);
+  max-width: var(--content-width);
+  margin: 10px auto;
+  transition: background-color 0.6s;
+  padding: var(--space);
+  border-radius: var(--radius);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.02),
+    1px 1px 15px 0 rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.6s;
+
+  &:empty {
+    display: none;
+  }
+}
+// import the stylesheet of vssue
+@import '~vssue/dist/vssue.css';
+
+.vssue div, .vssue span, .vssue article, .vssue select {
+  color: var(--body-color)!important;
+}
+
+.vssue a {
+  color: var(--link-color)!important;
+}

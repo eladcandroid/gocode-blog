@@ -25,10 +25,9 @@
     </div>
 
     <div class="post-comments">
-      <vue-disqus
-        shortname="gocode-blog"
-        :identifier="$page.post.title"
-      ></vue-disqus>
+      <Vssue
+          :title="$page.post.title"
+        />      
     </div>
 
     <Author class="post-author" />
@@ -64,8 +63,8 @@ export default {
 </script>
 
 <page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
+query Post ($id: ID!) {
+  post: post (id: $id) {
     author
     title
     path
@@ -122,16 +121,6 @@ query Post ($path: String!) {
       margin-left: calc(var(--space) * -1);
       display: block;
     }
-  }
-}
-
-.post-comments {
-  max-width: var(--content-width);
-  padding: calc(var(--space) / 2);
-  margin: 0 auto;
-
-  &:empty {
-    display: none;
   }
 }
 
