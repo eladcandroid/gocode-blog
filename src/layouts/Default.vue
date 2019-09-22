@@ -19,6 +19,7 @@
       <span class="footer__copyright">כל הזכויות שמורות לבורא עולם (ולגו-קוד) © {{ new Date().getFullYear() }}. </span>
       <span class="footer__links">נאפה בתנור חלבי בעזרת <a href="//gridsome.org"> Gridsome</a>.</span>
       <span class="footer__links">חובבי RSS <a href="/rss.xml" target="_blank"> זה בשבילכם</a>.</span>
+      <span class="footer__links">הבלוג ב<a href="https://github.com/eladcandroid/gocode-blog" target="_blank">GitHub</a>.</span>
     </footer>
 
   </div>
