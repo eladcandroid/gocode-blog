@@ -9,11 +9,6 @@ import Vssue from 'vssue';
 // import the api package for specific platform
 import GithubV3 from '@vssue/api-github-v3';
 
-console.log(
-  'process.env.GRIDSOME_VSSUE_CLIENT_ID',
-  process.env.GRIDSOME_VSSUE_CLIENT_ID
-);
-
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function(Vue, { router, head, isClient }) {
   Vue.use(Vssue, {
