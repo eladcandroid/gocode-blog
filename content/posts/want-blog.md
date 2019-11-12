@@ -172,8 +172,7 @@ npm run explore
 
 ## Markdown ושאר ירקות
 
-כדי להתחיל לחבר Plugins כמו תמיכה בקריאת קבצי Markdown, מגדירים את קובץ  gridsome.config.js כמו שמופיע כאן
-https://gridsome.org/docs/plugins
+כדי להתחיל לחבר Plugins כמו תמיכה בקריאת קבצי Markdown, מחפשים את הPlugin הרצוי [באן](https://gridsome.org/plugins/), ומוסיפים את השדות הרלוונטיים לקובץ gridsome.config.js על פי מה שכתוב בדף הPlugin.
 
 או פשוט ליצור פרויקט עם starter מוכן בהוספת שם ה starter לפקודה ה create. לדוגמא:
 
