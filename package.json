@@ -19,7 +19,7 @@
     "gridsome": "^0.7.4",
     "gridsome-plugin-pwa": "./gridsome-plugin-pwa",
     "gridsome-plugin-rss": "^1.1.3",
-    "vssue": "^1.0.3"
+    "vssue": "1.4.2"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
