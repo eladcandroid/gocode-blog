@@ -2,7 +2,7 @@
 slug: tip-delete-node-modules
 author: אלעד כהן
 title: טיפ להמונים - מחיקת node_modules במהירות האור
-date: 2020-13-01
+date: 2020-01-13
 published: true
 tags: ['Tips', 'Tip', 'node_modules', 'Node.js']
 image: ./images/tip-node-modules.jpg
