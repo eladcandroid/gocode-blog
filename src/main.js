@@ -20,7 +20,8 @@ export default function(Vue, { router, head, isClient }) {
     repo: 'gocode-blog',
     clientId: process.env.GRIDSOME_VSSUE_CLIENT_ID,
     clientSecret: process.env.GRIDSOME_VSSUE_CLIENT_SECRET, // only required for some of the platforms
-    autoCreateIssue: true
+    autoCreateIssue: true,
+    locale: 'he-IL'
   });
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);

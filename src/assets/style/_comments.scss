@@ -1,5 +1,5 @@
 .post-comments {
-  direction: initial;
+  direction: rtl;
   background-color: var(--bg-content-color);
   max-width: var(--content-width);
   margin: 10px auto;
@@ -13,9 +13,20 @@
   &:empty {
     display: none;
   }
+  .vssue .vssue-header .vssue-header-powered-by {
+    float: left;
+  }
+  .vssue-comment-avatar {
+    float: right !important;
+  }
+  @media screen and (min-width: 577px) {
+    .vssue .vssue-new-comment .vssue-new-comment-body {
+      margin-right: 70px;
+  }
+}
 }
 // import the stylesheet of vssue
-@import '~vssue/dist/vssue.css';
+@import 'vssue-rtl.css';
 
 .vssue div, .vssue span, .vssue article, .vssue select {
   color: var(--body-color)!important;
