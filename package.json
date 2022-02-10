@@ -22,7 +22,7 @@
     "vssue": "1.4.2"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "fs-extra": "^8.1.0"
   }
